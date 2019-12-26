@@ -23,7 +23,7 @@
 			"\troot: {}, ", 
 			"}))", 
 			"", 
-			"const ${1:App} = props => {", 
+			"const ${1:$TM_FILENAME_BASE} = props => {", 
 			"\tconst { className, ...rest } = props; ", 
 			"\tconst classes = useStyles();", 
 			"", 
@@ -32,14 +32,15 @@
 			"\t\t\t{...rest}", 
 			"\t\t\tclassName={clsx(classes.root, className)}", 
 			"\t\t>", 
-			"\t\t\t${4:material-ui}", 
+			"\t\t\t${4:$TM_FILENAME_BASE}", 
 			"\t\t</${2:div}>", 
 			"\t)", 
 			"}", 
 			"", 
-			"export default ${1:App}"
+			"export default ${1:$TM_FILENAME_BASE}"
 
 		], 
 		"description": "Material-UI react arrow function export"
 	}
+}
 }
